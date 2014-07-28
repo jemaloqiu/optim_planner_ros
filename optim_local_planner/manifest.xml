@@ -1,0 +1,48 @@
+<package>
+  <description brief="A local planner for a mobile base that uses the optimization-based algorithm">
+
+Under construction.
+
+  </description>
+  <author>Zhaopeng QIU</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+
+  <depend package="roscpp"/>
+  <depend package="tf"/>
+  <depend package="bullet"/>
+  <depend package="costmap_2d"/>
+  <depend package="geometry_msgs"/>
+  <depend package="roslib"/>
+  <depend package="nav_core"/>
+  <depend package="nav_msgs"/>
+  <depend package="base_local_planner" />
+  <depend package="angles" />
+  <depend package="dynamic_reconfigure" />
+  <depend package="std_msgs" />
+  <depend package="nav_msgs" />
+  <depend package="rosconsole" />
+  <depend package="roscpp" />
+  <depend package="tf" />
+  <depend package="roslib" />
+  <depend package="rospy" />
+  <depend package="pluginlib" />
+  <depend package="costmap_2d" />
+  <depend package="voxel_grid" />
+  <depend package="angles" />
+  <depend package="visualization_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="nav_core"/>
+  <rosdep name="pcl"/>
+  <depend package="pcl_ros"/>
+
+  <rosdep name="eigen" />
+  <export>
+    <cpp cflags="-I${prefix}/include -I${prefix}/cfg/cpp" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -loptim_local_planner" />
+    <nav_core plugin="${prefix}/blp_plugin.xml" />
+  </export>
+  <depend package="common_rosdeps" />
+  <rosdep name="eigen" />
+</package>
+
+

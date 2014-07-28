@@ -1,0 +1,13 @@
+/** \mainpage
+
+@htmlinclude manifest.html
+
+@section summary Summary
+This package provides an implementation of an optimization based planner for a mobile robot.
+The motion planning task is defined as an optimization problem: a parameterized curve (3rd-order polynomial) is used for representing the trajectory; a series of constraints must be respected including the kinematic constraints (veloricy/acceleration limits, initial and final conditions) and secure constraints (distance limit from obstacles). The optimization objective is set to minimize the distance between its final position and the goal position. The planner uses cfsqp solver to solve the above-mentioned optimization problem.
+
+@section usage Usage
+
+ - \ref optim_local_planner::OptimPlannerROS : The ROS wrapper for the optim local planner
+
+*/

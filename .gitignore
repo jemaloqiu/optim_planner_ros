@@ -1,0 +1,3 @@
+# ignore all temporary files in ubuntu system
+*~
+

@@ -1,0 +1,7 @@
+<library path="lib/liboptim_local_planner">
+  <class name="optim_local_planner/OptimPlannerROS" type="optim_local_planner::OptimPlannerROS" base_class_type="nav_core::BaseLocalPlanner">
+    <description>
+      A implementation of a local planner using an optimization-based approach based on configuration parameters.
+    </description>
+  </class>
+</library>
